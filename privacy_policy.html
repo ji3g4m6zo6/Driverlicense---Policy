@@ -1,57 +1,510 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant" xml:lang="zh-Hant">
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width'>
-  <title>Privacy Policy</title>
-  <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>《考駕照》隱私權政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page-bg: #f7f8fa;
+      --content-bg: #ffffff;
+      --text-color: #202124;
+      --muted-color: #5f6368;
+      --heading-color: #111827;
+      --rule-color: #d8dee8;
+      --accent-color: #0b63ce;
+      --quote-bg: #f1f5f9;
+      --table-header-bg: #eef3f8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--page-bg);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      width: 100%;
+      max-width: 820px;
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: clamp(20px, 4vw, 48px) clamp(18px, 4vw, 44px);
+      background: var(--content-bg);
+      color: var(--text-color);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      font-size: 17px;
+      line-height: 1.74;
+      letter-spacing: 0;
+      white-space: normal;
+      overflow-wrap: break-word;
+      word-break: normal;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--heading-color);
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0 0 0.7em;
+      font-size: clamp(1.85rem, 6vw, 2.45rem);
+    }
+
+    h2 {
+      margin: 2.2em 0 0.85em;
+      font-size: clamp(1.28rem, 4.6vw, 1.6rem);
+    }
+
+    h3 {
+      margin: 1.7em 0 0.7em;
+      font-size: clamp(1.08rem, 3.9vw, 1.22rem);
+    }
+
+    p {
+      margin: 0 0 1em;
+    }
+
+    ol,
+    ul {
+      margin: 0 0 1.1em;
+      padding-left: 1.45em;
+    }
+
+    li {
+      margin: 0.38em 0;
+      padding-left: 0.1em;
+    }
+
+    li > p {
+      margin: 0.35em 0;
+    }
+
+    li > ul,
+    li > ol {
+      margin-top: 0.45em;
+      margin-bottom: 0.45em;
+      padding-left: 1.2em;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    hr {
+      height: 1px;
+      margin: 2.05em 0;
+      border: 0;
+      background: var(--rule-color);
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    blockquote {
+      margin: 1.2em 0 1.45em;
+      padding: 0.95em 1.05em 0.95em 1.15em;
+      border-left: 4px solid var(--accent-color);
+      background: var(--quote-bg);
+      color: var(--text-color);
+    }
+
+    blockquote > :last-child {
+      margin-bottom: 0;
+    }
+
+    table {
+      width: 100%;
+      margin: 1.3em 0 1.6em;
+      border-collapse: collapse;
+      border-spacing: 0;
+      font-size: 0.94em;
+      line-height: 1.6;
+    }
+
+    th,
+    td {
+      padding: 0.72em 0.8em;
+      border: 1px solid var(--rule-color);
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: break-word;
+    }
+
+    th {
+      background: var(--table-header-bg);
+      color: var(--heading-color);
+      font-weight: 700;
+    }
+
+    code,
+    kbd,
+    samp {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.94em;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    div.columns {
+      display: flex;
+      gap: min(4vw, 1.5em);
+    }
+
+    div.column {
+      flex: auto;
+      overflow-x: auto;
+    }
+
+    div.hanging-indent {
+      margin-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    ul.task-list[class] {
+      list-style: none;
+    }
+
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+
+    .display.math {
+      display: block;
+      text-align: center;
+      margin: 0.5rem auto;
+    }
+
+    @media (max-width: 640px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      th,
+      td {
+        min-width: 9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 18px 32px;
+        font-size: 16px;
+        line-height: 1.72;
+      }
+
+      ol,
+      ul {
+        padding-left: 1.25em;
+      }
+
+      li > ul,
+      li > ol {
+        padding-left: 1.05em;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page-bg: #0f1115;
+        --content-bg: #171a21;
+        --text-color: #e7eaf0;
+        --muted-color: #aab2bf;
+        --heading-color: #ffffff;
+        --rule-color: #343a46;
+        --accent-color: #7db2ff;
+        --quote-bg: #202633;
+        --table-header-bg: #222a38;
+      }
+    }
+  </style>
 </head>
 <body>
-<h2>Privacy Policy</h2> <p> Chin Chia Yu built the  考駕照-臺灣駕照考題分析 app as a Free app. This SERVICE is provided by Chin Chia Yu at no cost and is intended for use as is.
-                  </p> <p>This page is used to inform visitors regarding my policies with the collection, use, and
-                    disclosure of Personal Information if anyone decided to use my Service.
-                  </p> <p>If you choose to use my Service, then you agree to the collection and use of information in relation
-                    to this policy. The Personal Information that I collect is used for providing and improving the
-                    Service. I will not use or share your information with anyone except as described
-                    in this Privacy Policy.
-                  </p> <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible
-                    at  考駕照-臺灣駕照考題分析 unless otherwise defined in this Privacy Policy.
-                  </p> <p><strong>Information Collection and Use</strong></p> <p>While using our Service, we may collect certain information, including technical and usage-related information such as your IP address, anonymous user identifier, device information, app usage data, and crash data. We collect and use this information to provide and improve the Service, maintain service security, prevent abuse and spam, process reports of inappropriate content, enforce user restrictions or blocks, and analyze app performance.</p>
-<p>The app also uses third-party services that may collect information used to identify you or your device. These third-party services may include advertising, analytics, and crash reporting providers. Please refer to their respective privacy policies for more information about how they collect, use, and process your data.</p> <div><p>Link to privacy policy of third party service providers used by the app</p> <ul><!----> <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob</a></li> <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Firebase Analytics</a></li> <li><a href="https://fabric.io/privacy" target="_blank">Fabric</a></li> <li><a href="http://try.crashlytics.com/terms/privacy-policy.pdf" target="_blank">Crashlytics</a></li> <!----> <!----></ul></div> <p><strong>Log Data</strong></p> <p> I want to inform you that whenever you use my Service, in a case of an
-                    error in the app I collect data and information (through third party products) on your phone
-                    called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address,
-                    device name, operating system version, the configuration of the app when utilizing my Service,
-                    the time and date of your use of the Service, and other statistics.
-                  </p> <p><strong>Cookies</strong></p> <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These
-                    are sent to your browser from the websites that you visit and are stored on your device's internal memory.
-                  </p> <p>This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries
-                    that use “cookies” to collect information and improve their services. You have the option to either
-                    accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to
-                    refuse our cookies, you may not be able to use some portions of this Service.
-                  </p> <p><strong>Service Providers</strong></p> <p> I may employ third-party companies and individuals due to the following reasons:</p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p> I want to inform users of this Service that these third parties have access to your
-                    Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they
-                    are obligated not to disclose or use the information for any other purpose.
-                  </p> <p><strong>Security</strong></p> <p> I value your trust in providing us your Personal Information, thus we are striving
-                    to use commercially acceptable means of protecting it. But remember that no method of transmission over
-                    the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee
-                    its absolute security.
-                  </p> <p><strong>Links to Other Sites</strong></p> <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed
-                    to that site. Note that these external sites are not operated by me. Therefore, I strongly
-                    advise you to review the Privacy Policy of these websites. I have no control over
-                    and assume no responsibility for the content, privacy policies, or practices of any third-party sites
-                    or services.
-                  </p> <p><strong>Children’s Privacy</strong></p> <p>These Services do not address anyone under the age of 13. I do not knowingly collect
-                    personally identifiable information from children under 13. In the case I discover that a child
-                    under 13 has provided me with personal information, I immediately delete this from
-                    our servers. If you are a parent or guardian and you are aware that your child has provided us with personal
-                    information, please contact me so that I will be able to do necessary actions.
-                  </p> <p><strong>Changes to This Privacy Policy</strong></p> <p> I may update our Privacy Policy from time to time. Thus, you are advised to review
-                    this page periodically for any changes. I will notify you of any changes by posting
-                    the new Privacy Policy on this page. These changes are effective immediately after they are posted on
-                    this page.
-                  </p> <p><strong>Contact Us</strong></p> <p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact
-                    me.
-                  </p> <p>This privacy policy page was created at <a href="https://privacypolicytemplate.net" target="_blank">privacypolicytemplate.net</a>                    and modified/generated by <a href="https://app-privacy-policy-generator.firebaseapp.com/" target="_blank">App Privacy Policy Generator</a></p>
+<h1 id="考駕照隱私權政策">《考駕照》隱私權政策</h1>
+<p><strong>版本：2026-07-03</strong></p>
+<hr />
+<h2 id="前言">前言</h2>
+<p>本隱私權政策（以下稱「本政策」）說明「考駕照」App（以下稱「本服務」或「本
+App」）如何蒐集、處理、利用及保護您在使用本服務過程中所產生之相關資料。</p>
+<p>本服務由個人獨立開發者 Yu Chin
+Chia（以下稱「開發者」）提供與維運。開發者依據中華民國《個人資料保護法》（以下稱「個資法」）及相關法令之規定，履行告知義務，請您於使用本服務前詳細閱讀本政策。</p>
+<p><strong>聯繫窗口（Email）：jiasapp@protonmail.com</strong></p>
+<hr />
+<h2 id="一蒐集者名稱">一、蒐集者名稱</h2>
+<p>本政策所稱「蒐集者」或「開發者」，係指個人獨立開發者 Yu Chin
+Chia，聯繫方式為 jiasapp@protonmail.com。</p>
+<hr />
+<h2 id="二蒐集之個人資料類型">二、蒐集之個人資料類型</h2>
+<h3 id="開發者直接蒐集之資料">2.1 開發者直接蒐集之資料</h3>
+<p>本服務<strong>不要求使用者提供姓名、電子郵件、電話號碼或任何帳號資訊</strong>。然為維持服務正常運作及履行法律義務，開發者於伺服器端自動記錄下列資料：</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>資料類型</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>網際網路通訊協定位址（IP 位址）</td>
+<td>您的裝置連線本服務伺服器時所使用之 IP 位址</td>
+</tr>
+<tr>
+<td>匿名裝置識別碼</td>
+<td>由本 App、作業系統或相關技術機制所產生之匿名識別資訊（非 Apple
+ID，無法用以識別您的真實身分）</td>
+</tr>
+<tr>
+<td>留言內容</td>
+<td>您在討論功能中自願張貼之文字內容</td>
+</tr>
+<tr>
+<td>時間戳記</td>
+<td>留言張貼之日期與時間</td>
+</tr>
+<tr>
+<td>題目識別碼</td>
+<td>留言所對應題目之編號</td>
+</tr>
+<tr>
+<td>留言狀態</td>
+<td>留言之顯示或停用狀態</td>
+</tr>
+<tr>
+<td>題目解析旗標</td>
+<td>是否被選為題目解析之標記</td>
+</tr>
+<tr>
+<td>檢舉紀錄</td>
+<td>其他使用者對留言提出檢舉之紀錄</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>關於「匿名」之說明：</strong><br />
+您的留言對其他使用者以匿名方式顯示，但上述技術紀錄（尤其是 IP
+位址）在特定情形下可能依法令規定，間接用以識別使用者，因此仍屬個資法所定義之個人資料範疇，開發者依法予以保護。</p>
+</blockquote>
+<h3 id="第三方服務自動蒐集之資料">2.2 第三方服務自動蒐集之資料</h3>
+<p>本服務整合下列第三方服務，該等服務可能依其各自之隱私權政策，自動蒐集額外資料：</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>服務名稱</th>
+<th>提供者</th>
+<th>用途</th>
+<th>隱私權政策參考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google AdMob</td>
+<td>Google LLC</td>
+<td>廣告投放（含獎勵廣告）</td>
+<td><a href="https://policies.google.com/privacy">Google
+隱私權政策</a></td>
+</tr>
+<tr>
+<td>Firebase Analytics</td>
+<td>Google LLC</td>
+<td>應用程式使用行為分析</td>
+<td><a href="https://policies.google.com/privacy">Google
+隱私權政策</a></td>
+</tr>
+<tr>
+<td>Firebase Crashlytics</td>
+<td>Google LLC</td>
+<td>應用程式崩潰偵測與除錯</td>
+<td><a href="https://policies.google.com/privacy">Google
+隱私權政策</a></td>
+</tr>
+<tr>
+<td>Apple App Store 內購</td>
+<td>Apple Inc.</td>
+<td>付費功能之交易處理</td>
+<td><a href="https://www.apple.com/legal/privacy/">Apple
+隱私權政策</a></td>
+</tr>
+</tbody>
+</table>
+<p>上述第三方服務所蒐集及處理之資料，係依各自之隱私權政策規範，開發者無法控制或存取該等服務所獨立蒐集之資料。</p>
+<h3 id="著作權侵權通知程序中蒐集之資料">2.3
+著作權侵權通知程序中蒐集之資料</h3>
+<p>當著作權利人或其合法代理人（以下合稱「通知人」）依本服務使用者條款第六條提出<strong>著作權侵權通知</strong>時，開發者將蒐集通知人所主動提供之下列資料：</p>
+<table>
+<thead>
+<tr>
+<th>資料類型</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>姓名或名稱</td>
+<td>通知人之身分識別</td>
+</tr>
+<tr>
+<td>電子郵件信箱</td>
+<td>處理通知及後續溝通之聯繫窗口</td>
+</tr>
+<tr>
+<td>通知內容</td>
+<td>所主張侵害之著作、疑似侵權之位置、侵權說明及相關聲明</td>
+</tr>
+</tbody>
+</table>
+<p>當遭移除內容之使用者提出<strong>回復通知</strong>時，開發者亦將蒐集其於回復通知中所提供之聯繫資訊（電子郵件信箱）。</p>
+<p><strong>資料揭露說明：</strong></p>
+<ul>
+<li>若使用者提出回復通知，開發者得依著作權法第九十條之七之規定，將回復通知之必要內容（含使用者所提供之電子郵件信箱）轉知原通知人，以便其決定是否採取進一步法律行動。</li>
+<li>反之，若使用者請求了解侵權通知之來源，開發者得視情況將通知人之必要聯繫資訊（電子郵件信箱）告知該使用者，以利雙方溝通。</li>
+<li>上述揭露以履行著作權法通知移除義務所必要之範圍為限，不作任何商業目的之利用。</li>
+</ul>
+<blockquote>
+<p><strong>致通知人之告知：</strong><br />
+您提交侵權通知即表示您同意開發者依前述方式蒐集及利用您所提供之個人資料。</p>
+</blockquote>
+<hr />
+<h2 id="三蒐集目的">三、蒐集目的</h2>
+<p>開發者蒐集上述資料之目的如下（依個資法第六條及法務部個資法特定目的代碼）：</p>
+<ol type="1">
+<li><strong>維持服務正常運作</strong>：識別並處理技術問題、伺服器錯誤及濫用行為。</li>
+<li><strong>使用者內容管理</strong>：顯示、管理討論留言，及依本服務條款處理違規或侵權內容。</li>
+<li><strong>著作權保護與侵權處理</strong>：依著作權法相關規定，於收到侵權通知後追蹤及處理相關使用者之行為（包括三振條款之執行）。</li>
+<li><strong>依法配合主管機關</strong>：依法院命令、主管機關要求或其他法律程序，提供必要資料。</li>
+<li><strong>廣告投放</strong>（透過
+AdMob）：向使用者顯示廣告，包括一般廣告及獎勵廣告。</li>
+<li><strong>應用程式品質改善</strong>（透過 Firebase Analytics 及
+Crashlytics）：分析使用行為並修復崩潰問題。</li>
+</ol>
+<hr />
+<h2 id="四個人資料之利用方式">四、個人資料之利用方式</h2>
+<ol type="1">
+<li><p>開發者僅在前述蒐集目的範圍內利用您的個人資料，不會將您的個人資料出售予第三人。</p></li>
+<li><p>下列情形下，開發者得揭露您的資料：</p>
+<ul>
+<li>依法律規定或主管機關、法院之合法要求。</li>
+<li>為保護他人之著作權或合法權益，在合理必要範圍內揭露必要資訊（例如：依本服務條款第六條回復通知機制，向著作權利人揭露必要聯繫資訊）。</li>
+<li>本服務終止、移轉或企業重組時，在保障同等隱私保護條件下移轉予繼受者。</li>
+</ul></li>
+<li><p>IP
+位址等技術紀錄，<strong>僅</strong>供識別同一裝置之濫用行為（如三振機制）及依法律程序提供，<strong>不</strong>用於商業目的。</p></li>
+</ol>
+<hr />
+<h2 id="五個人資料保存期間">五、個人資料保存期間</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>資料類型</th>
+<th>保存期間</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>留言內容、IP 位址、匿名識別碼、相關技術紀錄</td>
+<td>留言存在期間，及留言刪除後最長三（3）年；若涉及法律爭議，延長至爭議終結後一（1）年</td>
+</tr>
+<tr>
+<td>檢舉紀錄</td>
+<td>自檢舉處理完成後最長三（3）年</td>
+</tr>
+<tr>
+<td>著作權侵權通知及回復通知（含通知人與被通知人之聯繫資訊）</td>
+<td>自爭議終結後最長三（3）年，或依法律程序之需要延長</td>
+</tr>
+<tr>
+<td>Firebase Analytics 使用統計資料</td>
+<td>依 Google Firebase 預設設定（約十四個月），開發者不另行延長保存</td>
+</tr>
+<tr>
+<td>Firebase Crashlytics 崩潰回報資料</td>
+<td>依 Google Firebase Crashlytics 預設設定（約九十日）</td>
+</tr>
+<tr>
+<td>Apple App Store 付款紀錄</td>
+<td>由 Apple 依其政策保存；開發者不直接持有付款資料</td>
+</tr>
+</tbody>
+</table>
+<p>上述期限屆滿後，開發者將以刪除或去識別化方式處理相關資料。</p>
+<hr />
+<h2 id="六未成年人保護">六、未成年人保護</h2>
+<ol type="1">
+<li><p>本服務適用對象包括年滿 18
+歲之使用者，以及在法定代理人同意下使用本服務之未滿 18
+歲使用者。</p></li>
+<li><p>本服務不刻意蒐集任何未成年人之個人資料；本服務亦不針對兒童設計或行銷。</p></li>
+<li><p>若開發者得知已在未取得法定代理人同意之情形下，蒐集未成年人之個人資料，將盡速刪除相關資料。如有此情形，請依第九條所載聯繫窗口通知開發者。</p></li>
+</ol>
+<hr />
+<h2 id="七您依個資法享有之權利">七、您依個資法享有之權利</h2>
+<p>依個資法第三條規定，您就本服務所蒐集之個人資料，享有下列權利：</p>
+<ol type="1">
+<li><strong>查詢或請求閱覽</strong>：請求了解開發者保有您何種個人資料。</li>
+<li><strong>請求製給複製本</strong>：請求取得您個人資料之副本。</li>
+<li><strong>請求補充或更正</strong>：如您的個人資料有誤，請求補充或更正。</li>
+<li><strong>請求停止蒐集、處理或利用</strong>：於特定條件下，請求停止對您個人資料之蒐集、處理或利用。</li>
+<li><strong>請求刪除</strong>：請求刪除您的個人資料。</li>
+</ol>
+<p><strong>行使方式</strong>：請以電子郵件向 jiasapp@protonmail.com
+提出請求，並於主旨標示「個資權利請求」。由於本服務採匿名機制，您提出請求時，請盡可能提供可供識別之資訊（例如：留言之大致時間、題目編號等），以利開發者查找及處理。</p>
+<p>開發者將於收到請求後三十（30）日內回覆；如需延長處理時間，將告知原因。</p>
+<blockquote>
+<p>注意：因本服務之匿名設計，若您未能提供足以識別特定資料之資訊，開發者可能無法完整履行上述請求，但將盡力提供可行之協助。</p>
+</blockquote>
+<hr />
+<h2 id="八資料安全">八、資料安全</h2>
+<p>開發者採取合理之技術及管理措施，以防止個人資料遭未經授權之存取、揭露、變更或毀損。惟任何網際網路傳輸或電子儲存方式均無法保證絕對安全，開發者無法就資料安全作出完全保證。</p>
+<p>如您發現任何疑似資料外洩或安全疑慮，請立即聯繫
+jiasapp@protonmail.com。</p>
+<hr />
+<h2 id="九本政策之修改">九、本政策之修改</h2>
+<ol type="1">
+<li><p>開發者得隨時修改本政策，並以更新版本日期之方式標示。</p></li>
+<li><p>若涉及重大變更（例如：新增蒐集之資料類型、新增蒐集目的，或影響您的資料保護權利），開發者將盡可能提前至少七（7）日，透過本
+App 內通知或其他適當管道告知。</p></li>
+<li><p>修改後之政策，自公告時起生效；您繼續使用本服務，即視為您已閱讀並同意修改後之政策。</p></li>
+</ol>
+<hr />
+<h2 id="十聯繫窗口">十、聯繫窗口</h2>
+<p>如您對本政策或個人資料處理有任何疑問，或欲行使個資法賦予您的各項權利，請聯繫：</p>
+<p><strong>電子郵件：jiasapp@protonmail.com</strong><br />
+（請於主旨標示「隱私權相關」或「個資權利請求」，以利識別與優先處理。）</p>
+<hr />
+<p><em>本隱私權政策以中華民國《個人資料保護法》為主要規範依據，並適用於本服務在臺灣地區之使用者。</em></p>
 </body>
 </html>
-  
